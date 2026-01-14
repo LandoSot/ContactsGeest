@@ -1,6 +1,11 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
-  }
+    "strict": true,
+    "jsx": "react-native", // Habilita JSX para React Native
+    "noImplicitAny": true // No permite el uso de `any` implícito. Si algo no tiene tipo, TypeScript te pedirá que lo definas.
+  },
+  "include": [
+    "src",
+  ]
 }
